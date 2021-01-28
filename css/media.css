@@ -1,0 +1,51 @@
+@media screen and (max-width: 1360px) {
+    .op-section {
+        height: 500px;
+    }
+    .op-section .opiniones-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 0;
+        row-gap: 15px;
+    }
+}
+@media screen and (max-width:1023px) {
+    /* .op-section .opiniones-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    } */
+}
+@media screen and (max-width: 767px) {
+    .main_section {
+        height: 200px;
+    }
+    .products {
+        background-image: none;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 15px;
+    }
+    .product {
+        margin: 0;
+    }
+    .descrip-container {
+        height: 500px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .op-section .title-op {
+        align-self: center;
+    }
+    .op-section {
+        height: 900px;
+    }
+    .op-section .opiniones-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+}

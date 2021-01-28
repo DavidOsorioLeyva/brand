@@ -1,0 +1,133 @@
+:root {
+    --green-color: #7ACC2D;
+    --black-color: #313337;
+    --white-color: white;
+    --normal: 12px;
+    --space: 10px;
+    --box: 0 0 2px 1px #E6E5E9;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h3, p {
+    margin: 0;
+}
+nav {
+    display: flex;
+    background-color: var(--green-color);
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+nav li {
+    padding-left: 20px;
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+nav li a:hover {
+    color: white;
+}
+/*--------------------------*/
+main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    margin-bottom: 30px;
+}
+.title-container {
+    align-self: center;
+    justify-self: center;
+}
+.title-container h1 {
+    font-size: 2em;
+}
+.cards-products-cont {
+    padding: 0 100px;
+}
+.cards-products-cont h3 {
+    margin-bottom: 10px;
+}
+.cards-products-cont img {
+    width: 200px;
+}
+.cards-products1 {
+    display: grid;
+    grid-template-columns: 33.3% 66.7%;
+    align-items: center;
+}
+.cards-products2 {
+    display: grid;
+    grid-template-columns: 66.7% 33.3%;
+    align-items: center;
+}
+.cards-products3 {
+    display: grid;
+    grid-template-columns: 33.3% 66.7%;
+    align-items: center;
+}
+.image-cont2 {
+    justify-self: end;
+}
+.card-text-cont {
+    justify-self: end;
+}
+/*----------------*/
+footer {
+    width: 100%;
+    height: 50px;
+    background: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {
+    margin: 0 15px;
+}
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 960px) {
+    .cards-products-cont {
+        padding: 0 20px;
+    }
+    .cards-products1, .cards-products2, .cards-products3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+    .card-text-cont {
+        align-self: start;
+        justify-self: center;
+    }
+    .image-cont2 {
+        justify-self: center;
+    }
+    .cards-products2 {
+        height: 400px;
+        position: relative;
+    }
+    .cards-products2 .card2text {
+        position: absolute;
+        top: 50%;
+    }
+    .cards-products2 .image-cont2 {
+        position: absolute;
+        top: 0;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+}

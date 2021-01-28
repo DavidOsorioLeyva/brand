@@ -1,0 +1,133 @@
+:root {
+    --green-color: #7ACC2D;
+    --black-color: #313337;
+    --white-color: white;
+    --normal: 12px;
+    --space: 10px;
+    --box: 0 0 2px 1px #E6E5E9;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h3, p {
+    margin: 0;
+}
+nav {
+    display: flex;
+    background-color: var(--green-color);
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+nav li {
+    padding-left: 20px;
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+nav li a:hover {
+    color: white;
+}
+/*--------------------------*/
+main {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center;
+    justify-items: center; */
+}
+.sec1 {
+    justify-self: end;
+}
+.card-content {
+    box-shadow: var(--box);
+    width: 250px;
+    padding: 10px;
+    margin-top: 100px;
+    margin-right: 25px;
+}
+.card-content .img_content {
+    text-align: center;
+}
+.form-container {
+    margin-top: 100px;
+    margin-left: 25px;
+}
+.form-container form {
+    box-shadow: var(--box);
+    width: 300px;
+    padding: 10px;
+}
+label {
+    font-size: 12px;
+    display: block;
+}
+.form-container input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    outline: none;
+    margin: 10px 0;
+}
+.form-container button {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+.form-container button:hover {
+    background-color: #5E9E22;
+    cursor: pointer;
+}
+/*--------------*/
+footer {
+    width: 100%;
+    height: 50px;
+    background: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+footer p {
+    margin: 0 15px;
+}
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 960px) {
+    main {
+        height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .card-content , .form-container {
+        margin: 0;
+    }
+    .sec1, .sec2 {
+        align-self: center;
+        justify-self: center;
+    }
+    footer {
+        display: block;
+        text-align: center;
+        position: static;
+    }
+}
