@@ -76,3 +76,17 @@ footer p a {
     text-decoration: none;
     color: white;
 }
+/*-----------------*/
+@media screen and (max-width: 600px) {
+    main {
+        justify-items: center;
+    }
+    main p {
+        width: 90%;
+        text-align: center;
+    }
+    footer {
+        position: initial;
+        margin-block-start: 20px;
+    }
+}
